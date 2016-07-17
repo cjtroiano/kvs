@@ -1,0 +1,25 @@
+............F...F
+======================================================================
+FAIL: test_m_put_key_too_long (__main__.TestHW2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "2-unittests.py", line 109, in test_m_put_key_too_long
+    self.assertNotEqual(res.status_code,201)
+AssertionError: 201 == 201
+
+======================================================================
+FAIL: test_q_put_key_without_value (__main__.TestHW2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "2-unittests.py", line 138, in test_q_put_key_without_value
+    self.assertNotEqual(res.status_code,201)
+AssertionError: 201 == 201
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.235s
+
+FAILED (failures=2)
+<Response [201]>
+{'msg': 'success', 'replaced': 0}
+<Response [201]>
+{'msg': 'success', 'replaced': 0}

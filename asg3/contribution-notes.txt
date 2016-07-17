@@ -1,0 +1,7 @@
+gvelazq3 - 
+implemented the primary backup design, helped setup inter-node communication, set up the test cases and response model, set up for master node failure, designed master node design 
+
+ctroiano - 
+helped implement inter-node communication, and docker setup. Set up timeouts, and helped design responses and failure models and communication models, and implemented a broadcast function to broadcast to nodes, 
+
+sfarmani - helped w/ bug testing and model design.

@@ -1,0 +1,50 @@
+Loaded suite hw1-unittests
+Started
+F
+===============================================================================
+Failure:
+test1(TestSimpleNumber)
+hw1-unittests.rb:8:in `test1'
+      5:  
+      6:   def test1
+      7:     res = Unirest.get('http://localhost:49160/hello')
+  =>  8:     assert_equal(res.raw_body, 'Hello world!', 'GET on the hello resource did not execute successfully')
+      9:   end
+     10: 
+     11:  
+GET on the hello resource did not execute successfully
+<"Hello World!"> expected but was
+<"Hello world!">
+
+diff:
+? Hello World!
+?       w     
+===============================================================================
+........F
+===============================================================================
+Failure:
+test9(TestSimpleNumber)
+hw1-unittests.rb:58:in `test9'
+     55:  
+     56:   def test9
+     57:     res = Unirest.get('http://localhost:49160/hello?msg=AnyColourYouLike')
+  => 58:     assert_equal(res.raw_body, 'Hello world!', 'GET hello with a message did not execute successfully')
+     59:   end
+     60:     
+     61:  
+GET hello with a message did not execute successfully
+<"Hello World!"> expected but was
+<"Hello world!">
+
+diff:
+? Hello World!
+?       w     
+===============================================================================
+
+
+Finished in 0.028202495 seconds.
+
+10 tests, 12 assertions, 2 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+80% passed
+
+354.58 tests/s, 425.49 assertions/s

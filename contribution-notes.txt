@@ -1,0 +1,3 @@
+gvelazq3 - setup docker image and helped implement python file
+ctroiano - implemented python file and helped set up docker file
+sfarmani - helped setup docker image 
